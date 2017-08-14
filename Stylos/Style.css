@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900'); 
+
+*{
+    padding:0px;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background: #ffffff;
+}
+
+/*TELA DE ESCOLHA DE LOGIN "PAGE 1"*/
+
+.SectionEscolhaLogin{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    overflow: hidden;
+}
+.ImgFundo{ 
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px; 
+    right: 0px;
+    background-image: url(../Imagens/Outras/fundo1.jpg);
+    background-size: cover; 
+}
+.DivLogoLogin .MensagemEscolhaLoginMenor{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight:300; 
+    font-size: 27px; 
+    position: absolute;
+    margin-top: 190px;
+    width:77%;
+    left:  10%;   
+    background: transparent; 
+    -webkit-animation-name: nomeRight ;
+    -webkit-animation-duration: 0.6s;  
+    -webkit-animation-timing-function: linear; 
+    -webkit-animation-direction: alternate;   
+}
+
+    @-webkit-keyframes nomeRight {
+       from {
+             left:  100%; 
+        }
+       to{ 
+            left : 10%;
+        }
+    }
+
+.DivLogoLogin img{
+    padding-top: 25px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 0px 0px  17% 17%;
+    background: #ffffff;
+    position: absolute;
+    width: 110px; 
+    top: 00px;
+    left: 50%;
+    margin-left: -50px;
+    -webkit-animation-name: LogoTop ;
+    -webkit-animation-duration: 0.4s;  
+    -webkit-animation-timing-function: linear; 
+    -webkit-animation-direction: alternate;   
+}
+
+    @-webkit-keyframes LogoTop {
+       from {
+            margin-top: -140px; 
+        }
+       to{ 
+            margin-top: 0px;
+        }
+    }
+
+
+.DivEscolhaLogin{
+    position: absolute ; 
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+    right: 0px;
+    bottom: 0px; 
+}
+
+.DivEscolhaLogin .LoginNormal{
+    background:#ffffff;
+    font-size: 22px; 
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight:700; 
+    display: block;
+    height: 40px; 
+    color: #83AFFA;
+    height: 60px; 
+    width: 200px;
+    position: absolute;
+    overflow: hidden; 
+    margin-bottom: -10px;
+    top: 50%;
+    margin-left: 0px;
+    border-radius: 0px 30px 30px 0px; 
+    -webkit-animation-name: VindoLeft ;
+    -webkit-animation-duration: 0.5s;  
+    -webkit-animation-timing-function: linear; 
+    -webkit-animation-direction: alternate;
+    z-index: 4;
+}
+
+
+    @-webkit-keyframes VindoLeft {
+       from {
+            margin-left: -200px;   
+        }
+       to{ 
+            margin-left: 0px;
+        }
+    }
+
+
+.DivEscolhaLogin .LoginNormal p{ 
+    padding: -00px 30px 10px 30px; 
+    margin-top: 17px;
+    float: left;
+    position: absolute;
+}
+
+.DivEscolhaLogin .LoginFacebook{
+    background:#83AFFA;
+    font-size: 22px; 
+    padding: 0px; 
+    font-family: 'Roboto', sans-serif;
+    font-weight:700; 
+    margin-top: 74px;
+    color: white;
+    display: block;
+    top:50%;
+    margin-top: 74px;
+    width: 200px;
+    position: absolute;
+    overflow: hidden;
+    height: 60px;
+    border-radius: 0px 30px 30px 0px;
+    -webkit-animation-name: VindoLeft ;
+    -webkit-animation-duration: 0.5s;  
+    -webkit-animation-timing-function: linear; 
+    -webkit-animation-direction: alternate; 
+    
+}
+
+.DivEscolhaLogin .LoginFacebook p{ 
+    padding: 00px 60px 10px 30px; 
+    float: left;
+    margin-top: 17px;
+    position: absolute;
+    
+}
+
+.DivEscolhaLogin img{
+    width: 25px;
+    float:right;
+    right: 20px;
+    margin-left:24px;
+    margin-top: 17px; 
+    position: absolute;
+}
+
+.SobreNos{
+    position: fixed;
+    bottom: 10px;
+    padding: 0px;
+    font-size: 23px;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight:700; 
+    
+} 
+ 
+.InputEfeitoLoginEscolha:checked ~ .SectionEscolhaLoginTela2 {
+    width: 100%;
+    top: 0px;
+    bottom: 0px;
+    height: 100%;
+    border-radius: 0px 0px 0px 0px;
+    -webkit-transition:  0.4s;  
+    -webkit-animation-timing-function: linear; 
+    -webkit-animation-direction: alternate; 
+}
+
+.SectionEscolhaLoginTela2{
+    background: white;
+    position: absolute; 
+    width: 0px; 
+    top: 50%; 
+    width: 200px;
+    height: 60px;
+    z-index: 3;
+    overflow: hidden;
+    border-radius:0px 30px 30px 0px;
+    -webkit-transition:0.4s;  
+    -webkit-animation-timing-function: linear; 
+    -webkit-animation-direction: alternate; 
+    -webkit-animation-name: VindoLeft ;
+    -webkit-animation-duration: 0.5s;  
+    -webkit-animation-timing-function: linear; 
+    -webkit-animation-direction: alternate;   
+}
+
+.InputEfeitoLoginEscolha:checked ~ .LoginNormal{
+    background: transparent;
+    width: 100%;
+    border-radius: 0px;
+    height: 60px;
+    overflow: hidden;
+    top: 20px;
+    padding: 0px;
+    z-index: 4;
+    -webkit-transition:0.4s;  
+    -webkit-animation-timing-function: linear; 
+    -webkit-animation-direction: alternate;  
+} 
+
+.InputEfeitoLoginEscolha:checked ~ .LoginNormal img{
+    transform: rotate(-180deg); 
+    margin-right: 80%;
+    top:-4px;
+    width: 34px;
+    -webkit-transition:0.7s;  
+    -webkit-animation-timing-function: linear; 
+    -webkit-animation-direction: alternate;  
+} 
+
+.InputEfeitoLoginEscolha:checked ~ .LoginNormal p{
+    width: 110px;
+    height: 30px;
+    padding-top: 14px;
+    text-align: center;
+    border-radius: 30px;
+    background: #83AFFA;
+    color: white;
+    left: 50%;  
+    top:  -14px;
+    margin-left: -86px;
+    margin-right: 80%;
+    -webkit-transition:0.4s;  
+    -webkit-animation-timing-function: linear; 
+    -webkit-animation-direction: alternate; 
+}
+
+
+
+
+
+/* Grupos ======================================= */
+
+
+
+.FormInputsLogin  { 
+  position:relative; 
+  margin-top: 170px; 
+  display: none; 
+   margin-left: 0px; 
+}
+
+.InputEfeitoLoginEscolha:checked ~ .SectionEscolhaLoginTela2 .FormInputsLogin {
+     display: block;
+    -webkit-animation-delay:1s;
+    -webkit-transition:0.2s;  
+    -webkit-animation-timing-function: linear; 
+    -webkit-animation-direction: alternate; 
+    
+}
+
+
+.group 			  { 
+  position:relative; 
+  margin-bottom:45px; 
+  margin-left: 10%;
+  width: 80%;  
+}
+.InputTxt 				{
+  font-size:18px;
+  padding:10px 0px 10px 0px;
+  display:block;
+  width:100%;
+    color:#717070;
+  border:none;
+    font-size: 20px;
+  border-bottom:2px solid #898989;
+    font-family: 'Roboto', sans-serif;
+    font-weight:500; 
+}
+.InputTxt:focus 		{ outline:none; }
+
+/* LABEL ======================================= */
+.LabelTxt 				 {
+  color:#999; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight:600; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+.InputTxt:focus ~ .LabelTxt, .InputTxt:valid ~ .LabelTxt 		{
+  top:-20px;
+  font-size:14px;
+  color:#83AFFA;
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:100%; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:3px; 
+  width:0;
+  bottom:0px; 
+  position:absolute;
+  background:#83AFFA; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+.InputTxt:focus ~ .bar:before, .InputTxt:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+.InputTxt:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#83AFFA; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#83AFFA; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#83AFFA; }
+  to 	{ width:0; background:transparent; }
+}
+
+
+
+.BtnEntrarLogin{
+    background: #83AFFA;
+    border:none; 
+    width: 80%;
+    position: absolute;
+    bottom: 10%;
+    margin-left: 10%;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight:600; 
+    height: 70px;
+    margin-bottom: -200px;
+    border-radius: 70px;
+    font-size: 30px;
+    box-shadow: 0px 3px 5px 0.2px #b4b4b4; 
+}
+
+.InputEfeitoLoginEscolha:checked ~ .SectionEscolhaLoginTela2 .BtnEntrarLogin{
+     display: block; 
+    margin-bottom: -30px; 
+    animation: 1s;
+    transition: 1s;
+}
+
+
+
+
+
+
+
+
